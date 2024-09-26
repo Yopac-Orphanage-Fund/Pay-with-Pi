@@ -1,0 +1,39 @@
+docker run --name Pay with Pi app-mongo -d \
+  -e MONGO_INITDB_ROOT_USERNAME=Pay with Pi app -e MONGO_INITDB_ROOT_PASSWORD=dev_password \
+  -p 27017:27017 mongo:5.0
+
+docker stop Pay with pi app-mongo
+docker start Pay with pi app-mongo
+
+docker kill Pay with Pi app-mongo; docker rm Pay with Pi app-mongo
+ar MONGODB_DATABASE_NAME = "dvar MONGODB_DATABASE_NAME = "Pay with Pi app-development"
+var MONGODB_USERNAME = "Pay with Pi app"
+var MONGODB_PASSWORD = "dev_password"
+
+db.getSiblingDB("admin").createUser(
+  {
+    user: MONGODB_USERNAME,
+    pwd: MONGODB_PASSWORD,
+    roles: [
+      {
+        role: "dbOwner",
+        db: MONGODB_DATABASE_NAME,
+      }
+    ]
+  }
+); app-development"
+var MONGODB_USERNAME = "Pay with Pi app"
+var MONGODB_PASSWORD = "dev_password"
+
+db.getSiblingDB("admin").createUser(
+  {
+    user: MONGODB_USERNAME,
+    pwd: MONGODB_PASSWORD,
+    roles: [
+      {
+        role: "dbOwner",
+        db: MONGODB_DATABASE_NAME,
+      }
+    ]
+  }
+);
