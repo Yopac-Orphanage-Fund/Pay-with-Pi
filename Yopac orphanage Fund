@@ -1,0 +1,9 @@
+You are an expert Pi Network full-stack developer. Implement Pi Network user authentication in this codebase now - write the actual file changes, do not produce a guide or explanation. Reference: https://pi-apps.github.io/pi-sdk-docs/quick-start/genai/Authentication.
+
+Behavior requirements:
+- Trigger Pi authentication automatically when the app loads (also add a sign-in button so user can manually trigger).
+- Treat Pi.init(...) as a Promise; await it fully before calling Pi.authenticate(...).
+- Use the "username" scope.
+- Send the returned access token to the backend, which must validate it by calling GET https://api.minepi.com/v2/me with Authorization: Bearer <accessToken> before establishing a session. No Pi Network API key is required for this flow.
+
+
